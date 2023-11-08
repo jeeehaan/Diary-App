@@ -33,10 +33,10 @@ export async function POST(req) {
         },
       });
       const sendEmail = await resend.emails.send({
-        from: "Diary App <jessyhanif@gmail.com>",
+        from: "Diary App <test@jeeehaan.my.id>",
         to: createUser.email,
         subject: "Verification Code - Diary App",
-        html: `<p>Your verfication code is ${generateCode}</p>`,
+        html: `<p>Your verfication code is ${generatedCode}</p>`,
       });
       console.log(sendEmail);
     }
