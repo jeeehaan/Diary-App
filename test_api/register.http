@@ -1,0 +1,10 @@
+POST http://localhost:3000/api/v1/auth/register
+
+{
+    "firstName":"Jessy",
+    "lastName":"Hanifiah",
+    "username":"jeeehaan",
+    "email": "jessyhanifiah@gmail.com",
+    "password": "123456"
+
+}
