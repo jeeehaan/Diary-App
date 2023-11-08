@@ -1,0 +1,7 @@
+POST http://localhost:3000/api/v1/auth/verify
+
+{
+    "userId":"e164dd2d-aea8-4a82-a09c-b864d5927e28",
+    "code":"7rx5"
+
+}

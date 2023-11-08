@@ -36,7 +36,10 @@ export async function POST(req) {
         from: "Diary App <test@jeeehaan.my.id>",
         to: createUser.email,
         subject: "Verification Code - Diary App",
-        html: `<p>Your verfication code is ${generatedCode}</p>`,
+        html: `<h3>Thank you for registering</h3>
+        <p>Your verfication code is ${generatedCode}</p>
+        <a href="http://localhost:3000/verify?userid=${createUser.id}&code=${generatedCode}">Click here to verify your account</a>
+        `,
       });
       console.log(sendEmail);
     }
